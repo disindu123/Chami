@@ -78,3 +78,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const receiver = "your-email@example.com";
+
+    const subject = encodeURIComponent(
+      `Portfolio Contact from ${name}`
+    );
+
+    const body = encodeURIComponent(
+      `Hello Chamindu,\n\n` +
+      `Name: ${name}\n` +
+      `Email: ${email}\n\n` +
+      `Message:\n${message}\n\n` +
+      `Sent from Chamindu Jayakody's Portfolio`
+    );
+
+    window.location.href =
+      `mailto:${receiver}?subject=${subject}&body=${body}`;
+  });
+                                 }
