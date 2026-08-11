@@ -1047,3 +1047,556 @@ button {
     transition-duration: .01ms !important;
   }
     }
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact {
+  position: relative;
+  padding: 120px 0 100px;
+}
+
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.contact-label {
+  margin-bottom: 60px;
+}
+
+.contact-label span {
+  display: inline-flex;
+
+  padding: 10px 20px;
+
+  border-radius: 12px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: .12em;
+}
+
+
+/* =========================================
+   MAIN GRID
+========================================= */
+
+.contact-layout {
+  display: grid;
+
+  grid-template-columns: .95fr 1.05fr;
+
+  gap: 80px;
+
+  align-items: start;
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.contact-intro {
+  max-width: 500px;
+}
+
+.contact-small-title {
+  margin: 0 0 15px;
+
+  color: #f97316;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: .24em;
+}
+
+.contact-intro h2 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(48px, 6vw, 75px);
+
+  line-height: .98;
+
+  letter-spacing: -.06em;
+
+  color: #111827;
+}
+
+.contact-intro h2 span {
+  color: #f97316;
+}
+
+.contact-description {
+  max-width: 450px;
+
+  margin-top: 25px;
+
+  color: #7a8494;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+.social-icon {
+  width: 43px;
+  height: 43px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid #e3e7eb;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #4b5563;
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    color .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.social-icon:hover {
+  transform: translateY(-4px);
+
+  background: #f97316;
+
+  border-color: #f97316;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 25px rgba(249,115,22,.2);
+}
+
+
+/* =========================================
+   EMAIL COPY BOX
+========================================= */
+
+.email-copy-box {
+  width: fit-content;
+  max-width: 100%;
+
+  margin-top: 25px;
+
+  padding: 10px 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border: 1px solid #e5e8ec;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,.88);
+
+  box-shadow:
+    0 8px 25px rgba(15,23,42,.04);
+}
+
+.email-icon {
+  width: 37px;
+  height: 37px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: #fff3ea;
+
+  color: #f97316;
+}
+
+.email-icon svg {
+  width: 17px;
+}
+
+.email-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-content small {
+  color: #98a2b3;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+.email-content strong {
+  margin-top: 3px;
+
+  color: #374151;
+
+  font-size: 11px;
+
+  word-break: break-word;
+}
+
+
+/* Copy button */
+
+.copy-email {
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0 10px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+  background: #fff;
+
+  color: #687181;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.copy-email svg {
+  width: 13px;
+  height: 13px;
+}
+
+.copy-email:hover {
+  background: #f97316;
+  color: #fff;
+  border-color: #f97316;
+}
+
+
+/* =========================================
+   RIGHT CHAT AREA
+========================================= */
+
+.chat-area {
+  width: 100%;
+}
+
+.chat-top-line,
+.chat-bottom-line {
+  height: 1px;
+
+  background: #dfe3e8;
+}
+
+
+/* Email meta */
+
+.chat-meta {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 18px 5px 12px;
+}
+
+.chat-meta > span {
+  color: #7a8494;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+.chat-meta a {
+  color: #374151;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.chat-meta a span {
+  color: #f97316;
+
+  margin-left: 4px;
+}
+
+
+/* =========================================
+   CHAT BOX
+========================================= */
+
+.chat-box {
+  padding: 32px;
+
+  border-radius: 27px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 20px 55px rgba(15,23,42,.12);
+}
+
+.chat-title {
+  margin-bottom: 30px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  font-weight: 600;
+
+  letter-spacing: -.04em;
+}
+
+
+/* Inputs */
+
+.chat-input {
+  margin-top: 13px;
+}
+
+.chat-input input,
+.chat-input textarea {
+  width: 100%;
+
+  border: 1px solid rgba(255,255,255,.12);
+
+  outline: none;
+
+  border-radius: 11px;
+
+  background: rgba(255,255,255,.07);
+
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 12px;
+
+  transition: .25s ease;
+}
+
+.chat-input input {
+  height: 50px;
+
+  padding: 0 14px;
+}
+
+.chat-input textarea {
+  padding: 14px;
+
+  min-height: 115px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+.chat-input input::placeholder,
+.chat-input textarea::placeholder {
+  color: rgba(255,255,255,.42);
+}
+
+.chat-input input:focus,
+.chat-input textarea:focus {
+  border-color: #f97316;
+
+  background: rgba(255,255,255,.1);
+
+  box-shadow:
+    0 0 0 3px rgba(249,115,22,.1);
+}
+
+
+/* Send */
+
+.chat-send {
+  width: 100%;
+
+  height: 50px;
+
+  margin-top: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 0;
+
+  border-radius: 11px;
+
+  background: #f97316;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.chat-send svg {
+  width: 16px;
+}
+
+.chat-send:hover {
+  background: #ea650c;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(249,115,22,.25);
+}
+
+
+/* =========================================
+   SOCIAL LABEL
+========================================= */
+
+.chat-social-label {
+  padding: 17px 5px 0;
+
+  color: #9aa2af;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .2em;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .contact-intro {
+    max-width: 100%;
+  }
+
+  .contact-description {
+    max-width: 600px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .contact {
+    padding: 90px 0 75px;
+  }
+
+  .contact-label {
+    margin-bottom: 40px;
+  }
+
+  .contact-label span {
+    padding: 9px 15px;
+
+    font-size: 9px;
+  }
+
+  .contact-intro h2 {
+    font-size: 48px;
+  }
+
+  .contact-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .social-icons {
+    margin-top: 25px;
+  }
+
+  .email-copy-box {
+    width: 100%;
+  }
+
+  .email-content {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .email-content strong {
+    font-size: 10px;
+  }
+
+  .chat-box {
+    padding: 24px 20px;
+
+    border-radius: 22px;
+  }
+
+  .chat-title {
+    font-size: 34px;
+
+    margin-bottom: 22px;
+  }
+
+  .chat-meta {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  }
