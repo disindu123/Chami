@@ -106,3 +106,42 @@ if (contactForm) {
       `mailto:${receiver}?subject=${subject}&body=${body}`;
   });
                                  }
+const copyEmailBtn = document.getElementById("copyEmail");
+const emailText = document.getElementById("emailText");
+
+if (copyEmailBtn && emailText) {
+  copyEmailBtn.addEventListener("click", async () => {
+
+    const email = emailText.textContent.trim();
+
+    try {
+      await navigator.clipboard.writeText(email);
+
+      copyEmailBtn.querySelector("span").textContent = "Copied!";
+
+      setTimeout(() => {
+        copyEmailBtn.querySelector("span").textContent = "Copy";
+      }, 1800);
+
+    } catch (error) {
+
+      const temp = document.createElement("input");
+
+      temp.value = email;
+
+      document.body.appendChild(temp);
+
+      temp.select();
+
+      document.execCommand("copy");
+
+      temp.remove();
+
+      copyEmailBtn.querySelector("span").textContent = "Copied!";
+
+      setTimeout(() => {
+        copyEmailBtn.querySelector("span").textContent = "Copy";
+      }, 1800);
+    }
+  });
+      }
