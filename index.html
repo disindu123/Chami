@@ -225,35 +225,281 @@
     </section>
 
     <section class="section contact" id="contact">
-      <div class="contact-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">04 · Contact</p>
-          <h2>Let's make<br><span>something.</span></h2>
-          <p class="contact-copy">
-            My contact details and social media links are below.
-          </p>
+
+  <!-- SECTION LABEL -->
+  <div class="contact-label reveal">
+    <span>04. GET IN TOUCH</span>
+  </div>
+
+  <div class="contact-layout">
+
+    <!-- =====================================
+         LEFT SIDE
+    ====================================== -->
+    <div class="contact-intro reveal">
+
+      <p class="contact-small-title">LET'S WORK TOGETHER</p>
+
+      <h2>
+        Let's
+        <span>collaborate.</span>
+      </h2>
+
+      <p class="contact-description">
+        Have an idea, school project, media event, or creative opportunity?
+        I'd love to hear from you. Feel free to reach out and let's create
+        something meaningful together.
+      </p>
+
+      <!-- Social icons -->
+      <div class="social-icons">
+
+        <!-- Instagram -->
+        <a href="#" class="social-icon" aria-label="Instagram">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.8"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.4" cy="6.7" r="1"
+                    fill="currentColor"
+                    stroke="none"/>
+
+          </svg>
+
+        </a>
+
+        <!-- Facebook -->
+        <a href="#" class="social-icon" aria-label="Facebook">
+
+          <svg viewBox="0 0 24 24"
+               fill="currentColor">
+
+            <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.4-.1-2.5-.1-2.5 0-4.3 1.5-4.3 4.4V10H7.5v3h2.7v8h3.3Z"/>
+
+          </svg>
+
+        </a>
+
+        <!-- YouTube -->
+        <a href="#" class="social-icon" aria-label="YouTube">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.7"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+
+            <rect x="2.5"
+                  y="5.5"
+                  width="19"
+                  height="13"
+                  rx="4"/>
+
+            <path d="m10 9 5 3-5 3V9Z"
+                  fill="currentColor"
+                  stroke="none"/>
+
+          </svg>
+
+        </a>
+
+        <!-- TikTok -->
+        <a href="#" class="social-icon" aria-label="TikTok">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.8"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+
+            <path d="M14 4v10.3a4.2 4.2 0 1 1-3.2-4.1"/>
+            <path d="M14 4c.5 2.5 2.2 4 5 4"/>
+
+          </svg>
+
+        </a>
+
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/94772739059"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon whatsapp-icon"
+          aria-label="WhatsApp"
+        >
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.7"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+
+            <path d="M20.5 11.7a8.3 8.3 0 0 1-12.2 7.3L4 20l1.1-4.1a8.3 8.3 0 1 1 15.4-4.2Z"/>
+
+            <path d="M8.7 8.6c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.6.7c.5 1 1.3 1.8 2.4 2.4l.7-.6c.2-.2.5-.2.7-.1l1.6.7c.3.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.4.2-.9.3-1.4.2-2.3-.4-5-2.9-5.8-5.2-.2-.5 0-1 .1-1.4Z"/>
+
+          </svg>
+
+        </a>
+
+      </div>
+
+
+      <!-- Copyable Gmail -->
+      <div class="email-copy-box">
+
+        <div class="email-icon">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.8"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+
+          </svg>
+
         </div>
 
-        <div class="contact-card reveal">
-          <a href="mailto:your-email@example.com" class="contact-row">
-            <span>Email</span>
-            <strong>your-email@example.com ↗</strong>
-          </a>
-          <a href="#" class="contact-row">
-            <span>Instagram</span>
-            <strong>@yourusername ↗</strong>
-          </a>
-          <a href="#" class="contact-row">
-            <span>Facebook</span>
-            <strong>Your Profile ↗</strong>
-          </a>
-          <a href="#" class="contact-row">
-            <span>YouTube</span>
-            <strong>Your Channel ↗</strong>
-          </a>
+        <div class="email-content">
+          <small>EMAIL</small>
+          <strong id="emailText">your-email@gmail.com</strong>
         </div>
+
+        <button
+          class="copy-email"
+          id="copyEmail"
+          type="button"
+          aria-label="Copy email"
+        >
+
+          <svg class="copy-icon"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.8"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+
+            <rect x="8" y="8" width="11" height="11" rx="2"/>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>
+
+          </svg>
+
+          <span>Copy</span>
+
+        </button>
+
       </div>
-    </section>
+
+    </div>
+
+
+    <!-- =====================================
+         RIGHT SIDE
+    ====================================== -->
+    <div class="chat-area reveal">
+
+      <div class="chat-top-line"></div>
+
+      <div class="chat-meta">
+        <span>EMAIL</span>
+
+        <a href="mailto:your-email@gmail.com">
+          your-email@gmail.com
+          <span>↗</span>
+        </a>
+      </div>
+
+      <div class="chat-box">
+
+        <div class="chat-title">
+          The chat box
+        </div>
+
+        <form id="contactForm">
+
+          <div class="chat-input">
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+
+          </div>
+
+          <div class="chat-input">
+
+            <input
+              type="email"
+              id="senderEmail"
+              name="senderEmail"
+              placeholder="Your email"
+              required
+            >
+
+          </div>
+
+          <div class="chat-input message-input">
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Send me a message..."
+              rows="5"
+              required
+            ></textarea>
+
+          </div>
+
+          <button type="submit" class="chat-send">
+
+            <span>Send Message</span>
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <path d="M22 2 11 13"/>
+              <path d="m22 2-7 20-4-9-9-4Z"/>
+
+            </svg>
+
+          </button>
+
+        </form>
+
+      </div>
+
+      <div class="chat-bottom-line"></div>
+
+      <div class="chat-social-label">
+        SOCIAL
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
   </main>
 
   <footer class="footer">
