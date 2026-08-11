@@ -1046,38 +1046,27 @@ button {
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
   }
-}
+  }
 
 /* =========================================
    CONTACT SECTION
-   Clean White Portfolio Theme
+   Reference-style layout
 ========================================= */
 
 .contact {
   width: 100%;
-
-  padding: 120px 0 100px;
-
-  background: #ffffff;
-
+  padding: 115px 0 0;
+  background: #fff;
   color: #111318;
 }
 
-
-/* =========================================
-   CONTAINER
-========================================= */
-
 .contact-container {
-  width: min(1180px, calc(100% - 40px));
-
+  width: min(1380px, calc(100% - 100px));
   margin: 0 auto;
 
   display: grid;
-
-  grid-template-columns: .85fr 1.15fr;
-
-  gap: 90px;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 105px;
 
   align-items: start;
 }
@@ -1091,37 +1080,24 @@ button {
   padding-top: 5px;
 }
 
-
-/* Eyebrow */
-
 .contact-eyebrow {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   color: #667085;
 
-  font-size: 10px;
-
+  font-size: 11px;
   font-weight: 800;
-
   letter-spacing: .22em;
-
   text-transform: uppercase;
 }
-
-
-/* Title */
 
 .contact-title {
   margin: 0;
 
   font-family: "Poppins", sans-serif;
-
-  font-size: clamp(54px, 6vw, 76px);
-
-  line-height: .95;
-
+  font-size: clamp(58px, 6vw, 82px);
+  line-height: .92;
   letter-spacing: -.065em;
-
   font-weight: 800;
 
   color: #111318;
@@ -1132,18 +1108,17 @@ button {
 }
 
 
-/* Description */
+/* Paragraph */
 
 .contact-description {
-  max-width: 470px;
+  max-width: 475px;
 
-  margin: 42px 0 0;
+  margin: 45px 0 0;
 
   color: #697386;
 
-  font-size: 14px;
-
-  line-height: 1.85;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 
@@ -1156,110 +1131,95 @@ button {
 }
 
 .contact-social > p {
-  margin: 0 0 17px;
+  margin: 0 0 20px;
 
   color: #667085;
 
-  font-size: 9px;
-
+  font-size: 10px;
   font-weight: 800;
-
   letter-spacing: .25em;
 }
 
-
 .social-icons {
   display: flex;
-
-  gap: 14px;
+  gap: 15px;
 }
-
 
 .social-icons a {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 68px;
 
   display: grid;
-
   place-items: center;
 
-  border: 1px solid #e2e5e9;
+  border: 1px solid #e1e4e8;
+  border-radius: 15px;
 
-  border-radius: 14px;
-
-  background: #ffffff;
-
-  color: #111318;
-
-  transition:
-    transform .25s ease,
-    border-color .25s ease,
-    background .25s ease;
-}
-
-.social-icons svg {
-  width: 20px;
-  height: 20px;
-
-  fill: none;
-
-  stroke: currentColor;
-
-  stroke-width: 1.8;
-
-  stroke-linecap: round;
-
-  stroke-linejoin: round;
-}
-
-.social-icons a:nth-child(2) svg,
-.social-icons a:nth-child(3) svg {
-  fill: currentColor;
-
-  stroke: none;
-}
-
-.social-icons a:hover {
-  transform: translateY(-4px);
-
-  border-color: #cdd2d9;
-
-  background: #f8f9fa;
-}
-
-
-/* =========================================
-   CONTACT DETAILS
-========================================= */
-
-.contact-detail {
-  width: 100%;
-
-  max-width: 470px;
-
-  min-height: 85px;
-
-  padding: 16px 0;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 18px;
-
-  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
 
   color: #111318;
 
   text-decoration: none;
 
   transition:
-    padding .25s ease;
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+
+  background: #fafafa;
+  border-color: #cdd2d8;
+}
+
+.social-icons svg {
+  width: 25px;
+  height: 25px;
+
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.social-icons a:nth-child(2) svg,
+.social-icons a:nth-child(3) svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+
+/* =========================================
+   EMAIL + WHATSAPP
+========================================= */
+
+.contact-detail {
+  width: 100%;
+  max-width: 475px;
+
+  min-height: 85px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  color: #111318;
+  text-decoration: none;
+
+  transition: padding .25s ease;
 }
 
 .contact-detail:first-of-type {
-  margin-top: 25px;
-
+  margin-top: 40px;
   border-top: 1px solid #e5e7eb;
 }
 
@@ -1267,109 +1227,98 @@ button {
   padding-left: 6px;
 }
 
-
 .detail-icon {
-  width: 52px;
-  height: 52px;
+  width: 70px;
+  height: 68px;
 
   flex-shrink: 0;
 
   display: grid;
-
   place-items: center;
 
-  border: 1px solid #e2e5e9;
-
-  border-radius: 14px;
+  border: 1px solid #e1e4e8;
+  border-radius: 15px;
 
   color: #111318;
 }
 
 .detail-icon svg {
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
 
   fill: none;
-
   stroke: currentColor;
 
   stroke-width: 1.7;
-
   stroke-linecap: round;
-
   stroke-linejoin: round;
 }
 
-
 .detail-text {
-  display: flex;
+  flex: 1;
 
+  display: flex;
   flex-direction: column;
 
-  gap: 6px;
-
-  flex: 1;
+  gap: 7px;
 }
 
 .detail-text small {
-  color: #7c8492;
+  color: #667085;
 
-  font-size: 8px;
-
+  font-size: 9px;
   font-weight: 800;
 
-  letter-spacing: .22em;
+  letter-spacing: .23em;
 }
 
 .detail-text strong {
-  color: #526075;
+  color: #596579;
 
-  font-size: 13px;
-
+  font-size: 14px;
   font-weight: 500;
 }
 
 .detail-arrow {
-  color: #77808e;
-
-  font-size: 17px;
+  color: #7c8491;
+  font-size: 19px;
 }
 
 
 /* =========================================
-   RIGHT FORM
+   RIGHT FORM CARD
 ========================================= */
 
 .contact-right {
   width: 100%;
 }
 
-
 .form-card {
-  padding: 45px;
+  width: 100%;
+
+  padding: 43px;
 
   border: 1px solid #e1e4e8;
-
   border-radius: 22px;
 
-  background: #ffffff;
+  background: #fff;
 
   box-shadow:
-    0 12px 40px rgba(15, 23, 42, .035);
+    0 10px 35px rgba(15, 23, 42, .035);
 }
 
 
-/* Email header */
+/* Email top row */
 
 .form-email {
-  padding-bottom: 22px;
+  height: 45px;
+
+  padding-bottom: 20px;
 
   margin-bottom: 36px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
 
   border-bottom: 1px solid #e5e7eb;
@@ -1378,18 +1327,16 @@ button {
 .form-email span {
   color: #667085;
 
-  font-size: 9px;
-
+  font-size: 10px;
   font-weight: 800;
 
-  letter-spacing: .18em;
+  letter-spacing: .2em;
 }
 
 .form-email a {
   color: #293241;
 
-  font-size: 12px;
-
+  font-size: 13px;
   font-weight: 600;
 
   text-decoration: none;
@@ -1397,12 +1344,8 @@ button {
 
 
 /* =========================================
-   FORM INPUTS
+   FORM FIELDS
 ========================================= */
-
-#contactForm {
-  width: 100%;
-}
 
 #contactForm input,
 #contactForm textarea {
@@ -1411,18 +1354,16 @@ button {
   display: block;
 
   border: 1px solid #e1e4e8;
-
   border-radius: 12px;
 
   outline: none;
 
-  background: #ffffff;
+  background: #fff;
 
   color: #172033;
 
   font-family: "Inter", sans-serif;
-
-  font-size: 13px;
+  font-size: 14px;
 
   transition:
     border-color .25s ease,
@@ -1432,15 +1373,15 @@ button {
 #contactForm input {
   height: 70px;
 
-  padding: 0 18px;
+  padding: 0 19px;
 
   margin-bottom: 20px;
 }
 
 #contactForm textarea {
-  min-height: 205px;
+  height: 205px;
 
-  padding: 18px;
+  padding: 19px;
 
   resize: vertical;
 
@@ -1467,31 +1408,26 @@ button {
 
 #contactForm button {
   width: 100%;
-
-  height: 66px;
+  height: 67px;
 
   margin-top: 20px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
-  gap: 10px;
+  gap: 12px;
 
-  border: 0;
-
+  border: none;
   border-radius: 12px;
 
   background: #111318;
 
-  color: #ffffff;
+  color: #fff;
 
   font-family: "Inter", sans-serif;
 
-  font-size: 13px;
-
+  font-size: 14px;
   font-weight: 700;
 
   cursor: pointer;
@@ -1502,23 +1438,8 @@ button {
     box-shadow .25s ease;
 }
 
-#contactForm button svg {
-  width: 18px;
-  height: 18px;
-
-  fill: none;
-
-  stroke: currentColor;
-
-  stroke-width: 2;
-
-  stroke-linecap: round;
-
-  stroke-linejoin: round;
-}
-
 #contactForm button:hover {
-  background: #24272d;
+  background: #25282e;
 
   transform: translateY(-2px);
 
@@ -1526,21 +1447,59 @@ button {
     0 10px 25px rgba(15, 23, 42, .12);
 }
 
+#contactForm button svg {
+  width: 20px;
+  height: 20px;
+
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.contact-footer {
+  width: min(1380px, calc(100% - 100px));
+
+  margin: 60px auto 0;
+
+  padding: 30px 15px;
+
+  border-top: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #8b93a1;
+
+  font-size: 13px;
+}
+
+.contact-footer strong {
+  color: #111318;
+}
+
 
 /* =========================================
    MOBILE
 ========================================= */
 
-@media (max-width: 850px) {
-
-  .contact {
-    padding: 90px 0 75px;
-  }
+@media (max-width: 1000px) {
 
   .contact-container {
+    width: min(900px, calc(100% - 50px));
+
     grid-template-columns: 1fr;
 
-    gap: 60px;
+    gap: 65px;
   }
 
   .contact-description,
@@ -1548,22 +1507,36 @@ button {
     max-width: 100%;
   }
 
+  .form-card {
+    max-width: none;
+  }
+
 }
 
 
 @media (max-width: 600px) {
 
+  .contact {
+    padding-top: 85px;
+  }
+
   .contact-container {
     width: calc(100% - 30px);
+
+    gap: 50px;
+  }
+
+  .contact-eyebrow {
+    font-size: 9px;
+    margin-bottom: 22px;
   }
 
   .contact-title {
-    font-size: 48px;
+    font-size: 51px;
   }
 
   .contact-description {
-    margin-top: 28px;
-
+    margin-top: 30px;
     font-size: 13px;
   }
 
@@ -1576,10 +1549,35 @@ button {
   }
 
   .social-icons a {
-    width: 44px;
-    height: 44px;
+    width: 53px;
+    height: 53px;
 
-    border-radius: 12px;
+    border-radius: 13px;
+  }
+
+  .social-icons svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .contact-detail {
+    min-height: 75px;
+  }
+
+  .detail-icon {
+    width: 53px;
+    height: 53px;
+
+    border-radius: 13px;
+  }
+
+  .detail-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .detail-text strong {
+    font-size: 12px;
   }
 
   .form-card {
@@ -1588,26 +1586,31 @@ button {
     border-radius: 18px;
   }
 
-  .form-email {
-    margin-bottom: 25px;
-  }
-
   .form-email a {
     font-size: 10px;
   }
 
   #contactForm input {
     height: 58px;
-
-    margin-bottom: 14px;
   }
 
   #contactForm textarea {
-    min-height: 150px;
+    height: 150px;
   }
 
   #contactForm button {
     height: 56px;
   }
 
-}
+  .contact-footer {
+    width: calc(100% - 30px);
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 50px;
+  }
+    }
