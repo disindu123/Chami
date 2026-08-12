@@ -4,6 +4,7 @@ const menuBtn = document.getElementById("menuBtn");
 const nav = document.getElementById("nav");
 const year = document.getElementById("year");
 const cursorGlow = document.querySelector(".cursor-glow");
+const backToTopBtn = document.querySelector(".back-to-top");
 
 year.textContent = new Date().getFullYear();
 
@@ -11,6 +12,11 @@ function updateScrollUI() {
   const scrolled = window.scrollY > 30;
   header.classList.toggle("scrolled", scrolled);
   topBtn.classList.toggle("show", window.scrollY > 500);
+  
+  // Show/hide back to top button for contact section
+  if (backToTopBtn) {
+    backToTopBtn.classList.toggle("show", window.scrollY > 500);
+  }
 }
 
 window.addEventListener("scroll", updateScrollUI, { passive: true });
@@ -19,6 +25,13 @@ updateScrollUI();
 topBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// Back to top button click handler
+if (backToTopBtn) {
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
 
 menuBtn.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
