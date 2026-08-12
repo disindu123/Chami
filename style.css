@@ -1531,6 +1531,27 @@ button {
   to { opacity: 1; }
 }
 
+/* Send Icon Styles */
+.send-icon {
+  width: 22px;
+  height: 22px;
+  
+  transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+  
+  flex-shrink: 0;
+}
+
+/* Hover animation */
+.send-button:hover .send-icon {
+  transform: translateX(7px) translateY(-2px) rotate(-15deg);
+}
+
+/* Active state */
+.send-button:active .send-icon {
+  transform: translateX(4px);
+}
 
 /* =========================
    RESPONSIVE
